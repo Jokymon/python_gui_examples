@@ -5,6 +5,8 @@ import tkinter.font as tkfont
 class App(tk.Frame):
     def __init__(self, master):
         super().__init__(master)
+        self.winfo_toplevel().title("Tkinter Beispiel GUI")
+
         self.grid(padx=5, pady=5)
 
         tk.Label(self, text="Lass dich begrüssen").grid(column=0, row=0)
