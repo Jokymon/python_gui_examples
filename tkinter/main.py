@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk
+import tkinter.font as tkfont
 
 
 class App(tk.Frame):
@@ -27,6 +27,10 @@ class App(tk.Frame):
 
 if __name__ == "__main__":
     root = tk.Tk()
+    default_font = tkfont.nametofont("TkDefaultFont")
+    default_font.configure(size=14)
+    root.option_add("*Font", default_font)
+
     myapp = App(root)
 
     myapp.mainloop()
