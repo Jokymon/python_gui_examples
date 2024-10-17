@@ -19,3 +19,17 @@ als Basis für eigene Projekte verwenden.
    soll. Üblicherweise reicht ein `python main.py`, in gewissen Technologien
    können aber andere Schritte notwendig sein. Diese sind im `README.md` des
    Unterordners zu finden.
+
+## Features
+
+Bei der Umsetzung der Beispiele wurde darauf geachtet, dass immer mindestens
+folgende Funktionen umgesetzt sind:
+
+ * In einem Text-feld kann ein Name eingegeben werden
+ * Beim anclicken eines Buttons wird der Text aus dem
+   Namensfeld gelesen und eine Begrüssung erzeugt, die
+   in ein Label-Feld geschrieben wird
+ * Die Titelzeile des GUIs wird gesetzt
+ * Falls nötig wird die Grösse des Fensters festgesetzt
+ * Falls möglich, wird ein Gridlayout oder etwas 
+   ähnliches für die Anordnung der Elemente verwendet
