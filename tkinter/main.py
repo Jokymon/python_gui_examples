@@ -25,7 +25,7 @@ class App(tk.Frame):
     def greet_user(self):
         user_name = self.name_var.get()
         self.greeting_output.configure(text=f"Hello {user_name}")
-        
+
 
 if __name__ == "__main__":
     root = tk.Tk()

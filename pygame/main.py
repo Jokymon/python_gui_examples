@@ -9,18 +9,18 @@ ROW_HEIGHT = 40
 if __name__ == "__main__":
     pygame.init()
     pygame.display.set_caption("PyGame-GUI Beispiel GUI")
-    
+
     screen = pygame.display.set_mode(WINDOW_SIZE)
 
     manager = pygame_gui.UIManager(WINDOW_SIZE, 'theme.json')
 
     label = pygame_gui.elements.UILabel(
         relative_rect=pygame.Rect(10, 10, -1, ROW_HEIGHT),
-        text="Lass dich begrüssen", 
+        text="Lass dich begrüssen",
         manager=manager)
     label = pygame_gui.elements.UILabel(
         relative_rect=pygame.Rect(10, 10+ROW_HEIGHT, -1, ROW_HEIGHT),
-        text="Wie ist dein Name?", 
+        text="Wie ist dein Name?",
         manager=manager)
     name_entry = pygame_gui.elements.UITextEntryLine(
         relative_rect=pygame.Rect(190, 10+ROW_HEIGHT, 190, ROW_HEIGHT),
@@ -33,7 +33,7 @@ if __name__ == "__main__":
         relative_rect=pygame.Rect(10, 10+3*ROW_HEIGHT, 200, ROW_HEIGHT),
         text='',
         manager=manager)
-    
+
     clock = pygame.time.Clock()
     running = True
     while running:
@@ -50,10 +50,10 @@ if __name__ == "__main__":
             manager.process_events(event)
 
         manager.update(time_delta)
-    
+
         screen.fill(pygame.Color('#000000'))
         manager.draw_ui(screen)
-    
+
         pygame.display.flip()
-    
+
     pygame.quit()
