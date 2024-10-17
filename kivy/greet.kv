@@ -1,0 +1,31 @@
+<Widget>:
+    font_size: dp(20)
+
+<GreetWindow>:
+    orientation: 'vertical'
+
+    Label:
+        text: "Lass dich begrüssen"
+    BoxLayout:
+        orientation: 'horizontal'
+
+        Label:
+            text: "Wie ist dein Name?"
+        TextInput:
+            # Die id können wir für jedes Element selbst
+            # vergeben, wenn wir aus Python darauf zugreifen
+            # möchten.
+            id: name_widget
+        
+    Button:
+        id: greet_button
+        text: "Begrüsse"
+        # Mit on_press können wir definieren, welche
+        # Funktion aufgerufen werden soll, wenn der Knopf
+        # gedrückt wird. Wir rufen hier auf dem
+        # root-widget, also auf dem GreetWindow, die
+        # Funktion greet() auf
+        on_press: root.greet()
+    Label:
+        id: greeting_output
+        text: ""
