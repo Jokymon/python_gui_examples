@@ -1,6 +1,7 @@
 from kivy.app import App
 from kivy.core.window import Window
 from kivy.uix.boxlayout import BoxLayout
+from kivy.utils import platform
 
 
 class GreetWindow(BoxLayout):
@@ -18,7 +19,8 @@ class GreetApp(App):
     # hello.kv umbenannt werden.
     def build(self):
         self.title = "Kivy Beispiel GUI"
-        Window.size = (400, 150)
+        if platform != 'android':
+            Window.size = (400, 150)
         return GreetWindow()
 
 
