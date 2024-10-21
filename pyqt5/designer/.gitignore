@@ -1,0 +1,5 @@
+# Die Datei mainwindow.py wird mit pyuic5 aus dem .ui-File
+# generiert und sollte deshalb nicht versioniert werden.
+mainwindow.py
+
+__pycache__/

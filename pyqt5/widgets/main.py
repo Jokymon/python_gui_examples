@@ -7,7 +7,7 @@ from PyQt5.QtWidgets import *
 class MainWindow(QWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.setWindowTitle("PyQt5 Beispiel GUI")
+        self.setWindowTitle("PyQt5 Widgets Beispiel GUI")
 
         gridlayout = QGridLayout()
 
