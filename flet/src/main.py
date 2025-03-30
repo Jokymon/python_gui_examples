@@ -49,6 +49,10 @@ def main(page: ft.Page):
     )
 
     page.add(layout)
+    page.title = "Flet example GUI"
+    page.window.width = 390
+    page.window.height = 250
+    page.update()
 
 
 ft.app(main)
